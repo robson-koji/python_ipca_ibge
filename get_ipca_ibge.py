@@ -12,7 +12,7 @@ Caso quebre ou haja inconsistencia, acessar a URL acima para verificar.
 
 import os, sys, time, django
 
-from your.models import Your_model
+from your_model.models import Ipca_ibge
 
 import requests
 import datetime
@@ -90,7 +90,7 @@ def grava_arquivo_db(json_response):
         f.write(json_response.content)
 
     # Apaga dados da tabela do DB.
-    Your_model.objects.all().delete()
+    Ipca_ibge.objects.all().delete()
 
     # Insere os dados na tabela do DB.
     for lj in loaded_json:
@@ -99,7 +99,7 @@ def grava_arquivo_db(json_response):
         multiplicador = lj['V']
 
         # Recria tabela
-        Your_model.objects.create(data_presente=data_corrente_obj,
+        Ipca_ibge.objects.create(data_presente=data_corrente_obj,
                                  ano_mes_passado=data_passado_obj,
                                  multiplicador=multiplicador)
 
