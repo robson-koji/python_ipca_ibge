@@ -1,6 +1,7 @@
 """
 Insira este metodo na classe que possui valor financeiro passado a ser corrigido pelo IPCA.
-Basta chamar o metodo para obter o valor corrigido. 
+Basta chamar o metodo para obter o valor corrigido. Idealmente, esteh deve ser um metodo de classe 
+e deve estar no model que tem o valor a ser corrigido. 
 Altere conforme a necessidade.
 """
 
