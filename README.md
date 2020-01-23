@@ -1,1 +1,4 @@
-Here I have some python code, for the records, for portfolio analysis. And I wish that it also can be useful for the community. 
+IPCA IBGE
+- Captura do indice de correcao do IPCA
+- Gravação em banco de dados (Python/Django Model)
+- Utilização dos dados em banco para correção a valores correntes
